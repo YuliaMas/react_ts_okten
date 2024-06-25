@@ -98,4 +98,5 @@ fabric.properties
 /.idea/.gitignore
 /.idea/*.*
 /mar-2024-6.iml
+/.idea/**/*.xml
 /.idea/inspectionProfiles/Project_Default.xml
