@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+.w25 {
+    width: 25vw;
+}
+.dFlex{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 20px;
+}
+.cSelf{
+    align-self: center;
+}
+.blockHide {
+    visibility: hidden;
+}
+.blockVisible {
+    visibility: visible;
+}
