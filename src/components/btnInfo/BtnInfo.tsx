@@ -1,23 +1,21 @@
 import React, {FC} from "react";
 
-type IProps = {info : string} & {age: number};
+type IProps = {age: number, children: React.ReactNode};
 
-const BtnInfo: FC<IProps> = ({info, age}) => {
-    const clickHandler = (msg:string) => {
-    // const clickHandler = () => {
+const BtnInfo: FC<IProps> = ({age,children}) => {
+    // const clickHandler = (msg:string) => {
+    const clickHandler = () => {
+        console.log(children);
         console.log(age);
-        console.log(info);
-       alert(`child${age}`);
-       let child = document.getElementById(`child${age}`) ;
-       console.log(child);
-       console.log(info);
+        alert(`child${age}`);
+       // let child = document.getElementById(`child${age}`) ;   //don`t use
        // child.classList.toggle('blockHide');
        // child.innerText = info;
-       child.innerText = msg;
+       // child.innerText = msg;
     }
     return (
-        <button onClick={ () => {clickHandler(info)}}>Info </button>
-        // <button onClick={clickHandler}>Info</button>
+        // <button onClick={() => {clickHandler(info)}}>Info </button>
+        <button onClick={clickHandler}>Info</button>
     )
 }
 
