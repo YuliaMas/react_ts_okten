@@ -1,0 +1,13 @@
+#users {
+    display: flex;
+}
+ul {
+    width: 54vw;
+    display: grid;
+    grid-template-columns:  repeat(3, 250px);
+    grid-gap: 30px;
+    list-style-type: none;
+}
+#posts {
+    width: 45vw;
+}

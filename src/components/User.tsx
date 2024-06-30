@@ -6,8 +6,9 @@ const User: FC<UserModel<IUser>> = ({id, firstName, lastName, gender, clickHandl
 
     return (
         <li>
-            {id} : {firstName} - {lastName} --- {gender}
-            <button onClick={()=> {clickHandler(id)}}>Posts</button>
+            {id} : {firstName} - {lastName} -- {gender}
+            <br/>
+            <button onClick={()=>{clickHandler(id)}}>Posts</button>
         </li>
     )
 }
