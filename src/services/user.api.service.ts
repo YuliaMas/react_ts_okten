@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from "axios";
-import {IUser} from "../models/IUser";
+import {IUserResponse} from "../models/IUser";
 
 // const baseUrl = 'https://dummyjson.com/users';
 // const getUsers = (): Promise<IUser[]> => {
@@ -11,14 +11,15 @@ const axiosInstance = axios.create({
     headers: {'Content-Type': 'application/json'},
 })
 
-const getUsers = async (): Promise<AxiosResponse<IUser>> => {
+const getUsers = async (): Promise<AxiosResponse<IUserResponse>> => {
     return  await axiosInstance.get('/users',{
         params:{
-            limit: 0
+            limit: 30,
+            // skip: 30
         }
     });
 }
 
 export {
-    getUsers,
+    getUsers
 }

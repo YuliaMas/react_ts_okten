@@ -4,3 +4,7 @@ export interface IUser {
     lastName: string,
     gender: string
 }
+
+export interface IUserResponse {
+    users: IUser[];
+}

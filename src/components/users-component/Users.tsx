@@ -1,8 +1,8 @@
 import React, {FC, useEffect, useState} from "react";
-import {User} from "../User";
+import {User} from "../user-component/User";
 import {IUser} from "../../models/IUser";
 import {getUsers} from "../../services/user.api.service";
-import Posts from "../posts/Posts";
+import Posts from "../posts-component/Posts";
 import {IPost} from "../../models/IPost";
 import {getPosts} from "../../services/post.api.service";
 import './users-component.css';
@@ -13,20 +13,13 @@ const Users :FC = () => {
     const [posts, setPosts] = useState<IPost[]>([]);
 
     useEffect(() => {
-       getUsers().then(response => {
-           // const {users} = response.data;
-           // setUsers([...users]);
-           setUsers(response.data.users);
-            })
+       getUsers().then(response => setUsers(response.data.users))
     }, []);
 
     useEffect(() => {
         if (userId !==0)
         getPosts(userId).then((response) => {
-            // console.log(response.data.posts);
             const  {posts} = response.data;
-            // console.log({posts});
-            // console.log([...posts]);
             setPosts([...posts]);
         })
         .catch((err) => console.error(err));

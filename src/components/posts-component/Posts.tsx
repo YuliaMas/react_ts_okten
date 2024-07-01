@@ -1,6 +1,6 @@
 import React,  {FC , ReactNode} from "react";
 import {IPost} from "../../models/IPost";
-import Post from "../Post";
+import Post from "../post-component/Post";
 
 type IProps = {posts: IPost[] } & {children?: ReactNode};
 const Posts: FC<IProps> = ({posts}) => {
