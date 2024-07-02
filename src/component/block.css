@@ -1,0 +1,15 @@
+body {
+    margin: 60px;
+}
+.blockVisible {
+    visibility: visible;
+}
+
+.blockHidden {
+    visibility: hidden;
+}
+
+p {
+    width: 70vw;
+    margin: 0 auto;
+}
