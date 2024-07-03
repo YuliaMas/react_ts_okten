@@ -27,8 +27,7 @@ const App: FC = () => {
             value.data.users.map(user => user.firstName);
             setUsers(value.data.users);
         });
-
-    }, [users]);
+    }, []);
 
     return (
         <div className="App">
