@@ -1,0 +1,17 @@
+.usersComponent-container {
+    display: flex;
+    margin: 20px;
+}
+.usersComponent {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.posts {
+    width: 40vw;
+}
+li {
+    list-style-type: none;
+}

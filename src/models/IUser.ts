@@ -13,5 +13,5 @@ export interface IUser {
 
 export interface StateType {
     users: IUser[],
-    post?: IPost[]
+    posts: IPost[]
 }

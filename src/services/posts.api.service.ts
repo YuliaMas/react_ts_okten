@@ -1,5 +1,5 @@
 import axios from "axios";
-import {baseUrl, urls} from "./urls";
+import {baseUrl, urls} from "../constance/urls";
 import {StatePostType} from "../models/IPost";
 
 let axiosInstance = axios.create({

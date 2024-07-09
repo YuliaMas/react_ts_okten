@@ -1,6 +1,6 @@
 import axios from "axios";
 import {StateType} from "../models/IUser";
-import {baseUrl, urls} from "./urls";
+import {baseUrl, urls} from "../constance/urls";
 
 let axiosInstance = axios.create({
     baseURL: baseUrl,
