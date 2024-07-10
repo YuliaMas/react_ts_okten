@@ -7,10 +7,10 @@ form {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: flex-end;
-   margin: 0 auto;
+   margin: 20px auto;
    padding: 10px;
 }
-input {
+input , textarea {
    width: 260px;
    margin-left: 20px;
    margin-right: 10px;

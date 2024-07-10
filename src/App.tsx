@@ -1,11 +1,13 @@
 import React, {FC} from 'react';
 import './App.css';
-import FormComponent from './components/form/FormComponent';
+import UserFormComponent from './components/userForm/UserFormComponent';
+import AddPost from "./components/postForm/PostFormComponent";
 
 const App: FC = () => {
     return (
         <div className="App">
-            <FormComponent />
+            <UserFormComponent />
+            <AddPost/>
         </div>
     );
 }
