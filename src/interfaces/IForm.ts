@@ -10,4 +10,5 @@ export type IUserFormType = {
  export type IFormType = {
     title: string,
     body: string,
+    userId: number,
 }

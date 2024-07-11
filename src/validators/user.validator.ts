@@ -14,7 +14,7 @@ const userValidator =
         }),
         age: Joi.number().min(1).max(132).required().messages({
             "number.min": "min age is 1",
-            "number.max": "min age is 132",
+            "number.max": "max age is 132",
         }),
         email: Joi.string().pattern(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i).required().messages({
             'string.pattern.base': 'First letter, then letters, min 2 max 30 characters'

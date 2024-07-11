@@ -8,6 +8,10 @@ const postValidator =
         body: Joi.string().pattern(/^[A-Za-z]\w{1,266}/).required().messages({
             'string.pattern.base': 'First letter , min 2 max 266 characters'
         }),
+        userId: Joi.number().min(1).max(1000).required().messages({
+            "number.min": "min id is 1",
+            "number.max": "max id is 1000",
+        })
     })
 
 

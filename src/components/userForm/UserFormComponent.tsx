@@ -54,19 +54,19 @@ const UserFormComponent = () => {
 
             <form onSubmit={handleSubmit(formSubmit)}>
                 <label htmlFor="username"> Username:
-                    <input type="text" placeholder="Nickname..." {...register('username')}/>
+                    <input id="username" type="text" placeholder="Nickname..." {...register('username')} autoComplete="given-name"/>
                 </label>
                 <label htmlFor="password"> Password:
-                    <input type="text" placeholder="Password..." {...register('password')}/>
+                    <input id="password" type="text" placeholder="Password..." {...register('password')}/>
                 </label>
                 <label htmlFor="email"> Email:
-                    <input type="text" placeholder="Email..." {...register('email')}/>
+                    <input id="email" type="text" placeholder="Email..." {...register('email')} autoComplete="off"/>
                 </label>
                 <label htmlFor="name"> Firstname:
-                    <input type="text" placeholder="Name..." {...register('name')}/>
+                    <input id="name" type="text" placeholder="Name..." {...register('name')} autoComplete="given-name"/>
                 </label>
                 <label htmlFor="age"> Your age:
-                    <input type="number" placeholder="Age..." {...register('age')}/>
+                    <input id="age" type="number" placeholder="Age..." {...register('age')}/>
                 </label>
                 <button disabled={!isValid}> Login</button>
             </form>
