@@ -1,4 +1,4 @@
-ul {
+ul.menu {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -6,7 +6,7 @@ ul {
     width: 72vw;
     margin: 20px 0 0;
 }
-li {
+.menu>li {
     text-align: center;
     border: 2px solid blue;
     border-bottom: 0 ;

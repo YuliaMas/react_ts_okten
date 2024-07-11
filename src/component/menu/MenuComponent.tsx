@@ -5,7 +5,7 @@ import "./MenuComponent.css";
 const MenuComponent = () => {
     return (
         <div>
-            <ul>
+            <ul className={"menu"}>
                 <li className={"homeLi"}><Link to={''}>home</Link></li>
                 <li  className={"userLi"}><Link to={'users'}>users page</Link></li>
                 <li  className={"postLi"}><Link to={'posts'}>posts page</Link></li>

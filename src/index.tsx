@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import UsersPage from "./pages/UsersPage";
-import PostsPage from "./pages/postPage/PostsPage";
-import CommentsPage from "./pages/CommentsPage";
+import UsersPage from "./pages/usersPage/UsersPage";
+import PostsPage from "./pages/postsPage/PostsPage";
+import CommentsPage from "./pages/commentsPage/CommentsPage";
 import CustomErrorLayout from "./layouts/customError/CustomErrorLayout";
 import HomePage from "./pages/homePage/HomePage";
 
