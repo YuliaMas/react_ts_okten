@@ -1,8 +1,9 @@
 import React from 'react';
+import "./PostsPage.css";
 
 const PostsPage = () => {
     return (
-        <div>
+        <div className={"homepage"}>
             Posts Page
         </div>
     );

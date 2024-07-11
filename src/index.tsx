@@ -4,10 +4,10 @@ import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import UsersPage from "./pages/UsersPage";
-import PostsPage from "./pages/PostsPage";
+import PostsPage from "./pages/postPage/PostsPage";
 import CommentsPage from "./pages/CommentsPage";
-import CustomErrorLayout from "./layouts/CustomErrorLayout";
-import HomePage from "./pages/HomePage";
+import CustomErrorLayout from "./layouts/customError/CustomErrorLayout";
+import HomePage from "./pages/homePage/HomePage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,8 +15,7 @@ const root = ReactDOM.createRoot(
 
 let router = createBrowserRouter([
     {
-        path: '/',
-        element: <MainLayout/> ,
+        path: '/', element: <MainLayout/> ,
         errorElement: <CustomErrorLayout/>,
         children: [
             {index: true, element: <HomePage/>},

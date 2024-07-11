@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuComponent from "../component/MenuComponent";
+import MenuComponent from "../component/Menu/MenuComponent";
 import {Outlet} from "react-router-dom";
 
 const MainLayout = () => {
