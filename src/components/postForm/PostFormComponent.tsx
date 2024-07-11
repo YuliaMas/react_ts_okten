@@ -6,16 +6,18 @@ import {joiResolver} from "@hookform/resolvers/joi";
 import postValidator from "../../validators/post.validator";
 
 const AddPost : FC = () => {
-    const {formState: {errors, isValid},register, handleSubmit, reset} = useForm({
+    const {formState: {errors, isValid},register, handleSubmit, reset}
+        = useForm<IFormType>({
         mode: 'all',
         resolver: joiResolver(postValidator),
     });
 
-const save: SubmitHandler<IFormType> = async (post) => {
+const save: SubmitHandler<IFormType> = async (post:IFormType) => {
    await postService.create(post);
+   console.log(post);
     reset();
 };
-
+console.log(save);
 return (
     <div>
         {errors.title && <p>Title error:{errors.title?.message}</p>}
