@@ -1,0 +1,27 @@
+.pending {
+    color: blueviolet;
+}
+.active {
+    color: yellow;
+    font-weight: bold;
+    border: 2px solid cornflowerblue;
+    padding: 18px 80px;
+    background-color: cornflowerblue;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.menu {
+    display: flex;
+    width: 60vw;
+    margin-left: 36px;
+    justify-content: space-between;
+}
+button {
+    padding: 20px;
+    margin: 20px 40px;
+    font-weight: 600;
+}

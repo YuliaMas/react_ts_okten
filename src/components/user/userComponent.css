@@ -1,0 +1,7 @@
+.users-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: baseline;
+    align-content: space-around;
+}

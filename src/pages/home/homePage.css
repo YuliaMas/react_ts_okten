@@ -1,0 +1,13 @@
+.main {
+    background: cornflowerblue;
+    width: 90vw;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+.main>div {
+    padding: 20px;
+}
+h1 {
+    color: rgb(100 252 255);
+    text-align: center;
+}
