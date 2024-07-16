@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
-import CustomErrorLayout from "../layouts/CustomErrorLayout";
+import ErrorLayout from "../layouts/error/ErrorLayout";
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/home/HomePage";
@@ -15,7 +15,7 @@ import PostPage from "../pages/PostPage";
 
 const routes = [{
     path: '/', element: <MainLayout/>,
-    errorElement: <CustomErrorLayout/>,
+    errorElement: <ErrorLayout/>,
     children: [
         {index: true, element: <HomePage/>},
         {path: '/users', element: <UsersPage/>},
