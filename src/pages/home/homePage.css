@@ -11,3 +11,6 @@ h1 {
     color: rgb(100 252 255);
     text-align: center;
 }
+.post-link {
+    padding-left: 20px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useAppLocation} from "../hook/useAppLocation";
 import {IPost} from "../models/IPost";
 import PostInfoComponent from "../components/PostInfoComponent";
@@ -17,6 +17,9 @@ const PostPage = () => {
         <div className={"main"}>
             <h1>Post Page</h1>
             <PostInfoComponent  key={state.id} state={state}/>
+            <Link to={"/posts/" + id+ "/comments"} className={"post-link"}>
+                Comments...
+            </Link>
         </div>
     );
 };

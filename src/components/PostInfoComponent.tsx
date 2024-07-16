@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import {IPost} from "../models/IPost";
-// import {Link} from "react-router-dom";
 
 interface IProps {
     state: IPost
@@ -13,9 +12,6 @@ const PostInfoComponent : FC<IProps> = ({state}) => {
             <hr/>
             <h3>Post title: {state.title} </h3>
             <p>Post body: {state.body}</p>
-            {/*<Link to={state.id.toString() + "/comments"}>*/}
-            {/*    Comments...*/}
-            {/*</Link>*/}
         </div>
     );
 };
