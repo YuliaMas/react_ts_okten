@@ -12,6 +12,7 @@ const CommentComponent:FC<IProps> = ({comment}) => {
             <Link to={"/comments/" + comment.id} state={comment}><h2>Id: {comment.id} name: {comment.name}</h2></Link>
             <h3>Email: {comment.email}</h3>
             <h3>Body: {comment.body}</h3>
+            <hr/>
         </div>
     );
 };
