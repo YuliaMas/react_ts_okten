@@ -12,11 +12,10 @@ const PostPage = () => {
                 getPostById(id.toString()).then(value => setPost(value));
             }
         }, [id]);
-
     return (
         <div className={"main"}>
             <h1>Post Page</h1>
-            <PostInfoComponent key={id} post={post}/>
+            {post && <PostInfoComponent key={id} post={post}/>}
             <Link to={"/posts/" + id + "/comments"} state={post} className={"post-link"}>
                 Comments...
             </Link>
