@@ -18,11 +18,12 @@ const UserPage= () => {
             })
         }
     }, [id]);
+
     return (
         <div className={"main"}>
             <h1>User Page</h1>
-            {user && <UserInfoComponent key={id} state={user}/>}
-            <button onClick={() => navigate("posts" ,{state: {user}})}>  Posts UserId: {id}</button>
+            {user && id && <UserInfoComponent key={id} state={user}/>}
+            {user && id && <button onClick={() => navigate("posts" ,{state: {user}})}>  Posts UserId: {id}</button>}
             {/*<button onClick={() => navigate("posts" ,{state: {state}})}>  Posts UserId: {id}</button>*/}
         </div>
     );

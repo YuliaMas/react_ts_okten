@@ -5,13 +5,14 @@ interface IProps {
     post: IPost
 }
 const PostInfoComponent : FC<IProps> = ({post}) => {
+    if(!post) {return <p>Error</p>}
     return (
         <div>
-            <h3>User id: {post.userId} </h3>
-            <h2>Post id: {post.id}</h2>
+            {Boolean(post.userId) && <h3>User id: {post.userId} </h3>}
+            {Boolean(post.id) && <h2>Post id: {post.id}</h2>}
             <hr/>
-            <h3>Post title: {post.title} </h3>
-            <p>Post body: {post.body}</p>
+            {Boolean(post.title) && <h3>Post title: {post.title} </h3>}
+            {Boolean(post.body) && <p>Post body: {post.body}</p>}
         </div>
     );
 };

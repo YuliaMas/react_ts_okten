@@ -11,11 +11,11 @@ const CommentPage = () => {
         if(id) {
             getCommentById(id).then(value => setComment(value));
         }
-    }, []);
+    }, [id]);
     return (
         <div className={"main"}>
             <h1>Comment Page</h1>
-            <CommentByIdComponent comment={comment}/>
+            {comment && <CommentByIdComponent comment={comment}/>}
         </div>
     );
 };
