@@ -7,7 +7,7 @@ interface IProps {
 }
 const UsersComponent: FC <IProps> = ({users}) => {
     return (
-        <div>
+        <div className={"users-grid"} >
             {
                 users.map(user => (
                     <UserComponent user={user} key={user.id}/>

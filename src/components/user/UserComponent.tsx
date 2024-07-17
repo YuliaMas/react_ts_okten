@@ -7,7 +7,7 @@ interface IProps {
 }
 const UserComponent: FC<IProps>  = ({user}) => {
     return (
-        <div className={"users-grid"}>
+        <div>
             <Link to={user.id.toString()} state={user}>
                 <h2>Id: {user.id}  -   {user.username}</h2>
                 <h3>email: {user.email}</h3>

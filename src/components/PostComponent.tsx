@@ -7,13 +7,13 @@ interface IProps {
 const PostComponent:FC<IProps> = ({post}) => {
     return (
         <div>
+            {/*<h2>User id: {post.userId}</h2>*/}
             <Link to={post.id.toString()} state={post}>
-                <h2>User id: {post.userId} -- Post id: {post.id}</h2>
+                <h2>  Post id : {post.id}. {post.title} </h2>
             </Link>
-            <h2>Post title: {post.title}</h2>
-            {/*<h3>Body: {post.body}</h3>*/}
+
             <Link to={post.id.toString() + "/comments"} state={post}>
-                Comments...
+                    Comments...
             </Link>
             <hr/>
         </div>

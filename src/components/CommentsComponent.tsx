@@ -10,7 +10,7 @@ const CommentsComponent:FC<IProps> = ({comments}) => {
         <div>
             {
                 comments.map(comment => (
-                    <CommentComponent key={comment.id} comment={comment}/>
+                    <CommentComponent key={comment.id} comment={comment} />
                 ))
             }
         </div>
