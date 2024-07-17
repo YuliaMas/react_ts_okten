@@ -9,7 +9,6 @@ const axiosInstance = axios.create({
     headers: {}
 });
 
-
 const  getAllUsers = async (): Promise<IUser[]> => {
         let axiosResponse = await axiosInstance.get<IUser[]>(urls.users.all);
         return axiosResponse.data;
