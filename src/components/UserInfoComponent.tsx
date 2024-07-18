@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import {IUser} from "../models/IUser";
+import ErrorLayout from "../layouts/error/ErrorLayout";
 
 interface IProps  {
     state: IUser;
 }
 const UserInfoComponent: FC<IProps> = ({state}) => {
-    if(!state) {return <p>Error</p>}
+    // if(!state) {return <ErrorLayout/>}
     return (
         <div>
             {Boolean(state.id) && <h2>Id: {state.id} {state.username}</h2>}

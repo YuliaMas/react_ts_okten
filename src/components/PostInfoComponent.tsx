@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import {IPost} from "../models/IPost";
+import ErrorLayout from "../layouts/error/ErrorLayout";
 
 interface IProps {
     post: IPost
 }
 const PostInfoComponent : FC<IProps> = ({post}) => {
-    if(!post) {return <p>Error</p>}
+    if(!post) {return <ErrorLayout/>}
     return (
         <div>
             {Boolean(post.userId) && <h3>User id: {post.userId} </h3>}

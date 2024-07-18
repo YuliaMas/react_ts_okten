@@ -4,6 +4,7 @@ import {IUser} from "../models/IUser";
 // import {useAppLocation} from "../hook/useAppLocation";
 import UserInfoComponent from "../components/UserInfoComponent";
 import {getUserById} from "../services/api.service";
+// import ErrorLayout from "../layouts/error/ErrorLayout";
 
 const UserPage= () => {
     let navigate = useNavigate();
@@ -25,6 +26,7 @@ const UserPage= () => {
             {user && id && <UserInfoComponent key={id} state={user}/>}
             {user && id && <button onClick={() => navigate("posts" ,{state: {user}})}>  Posts UserId: {id}</button>}
             {/*<button onClick={() => navigate("posts" ,{state: {state}})}>  Posts UserId: {id}</button>*/}
+            {/*{!user && <ErrorLayout/>}*/}
         </div>
     );
 };
